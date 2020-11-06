@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.UserFragment">
+
+    <Button
+        android:id="@+id/btnCreateUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_create_user"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text14"
+        android:fontFamily="@font/exo2_regular"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginEnd="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin16"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_sort_by"
+        android:textSize="@dimen/text16"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/exo2_regular"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateUser" />
+
+    <RadioGroup
+        android:id="@+id/rgSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@+id/tvSort"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSort"
+        app:layout_constraintStart_toEndOf="@+id/tvSort">
+
+        <RadioButton android:id="@+id/rbName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/txt_name" />
+
+        <RadioButton android:id="@+id/rbEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_email" />
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin16"
+        android:paddingBottom="@dimen/padding16"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@+id/rgSort"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

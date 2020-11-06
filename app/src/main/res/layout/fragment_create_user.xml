@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.CreateUserFragment">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_name"
+        android:textSize="@dimen/text14"
+        android:fontFamily="@font/exo2_regular"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginEnd="@dimen/margin16"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_email"
+        android:textSize="@dimen/text14"
+        android:fontFamily="@font/exo2_regular"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginEnd="@dimen/margin16"
+        app:layout_constraintTop_toBottomOf="@+id/edtName"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_gender"
+        android:textSize="@dimen/text16"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/exo2_regular"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@+id/tvSort"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSort"
+        app:layout_constraintStart_toEndOf="@+id/tvSort">
+
+        <RadioButton android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/txt_male" />
+
+        <RadioButton android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_female" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_status"
+        android:textSize="@dimen/text16"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/exo2_regular"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgGender" />
+
+    <RadioGroup
+        android:id="@+id/rgStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@+id/tvStatus"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStatus"
+        app:layout_constraintStart_toEndOf="@+id/tvStatus">
+
+        <RadioButton android:id="@+id/rbActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/txt_active" />
+
+        <RadioButton android:id="@+id/rbInActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_inactive" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_submit"
+        android:textSize="@dimen/text16"
+        android:fontFamily="@font/exo2_regular"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/margin32"
+        app:layout_constraintTop_toBottomOf="@+id/rgStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

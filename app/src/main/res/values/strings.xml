@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TechFlitterTestKirit</string>
+
+    <!-- Splash Screen -->
+
+    <string name="logoText">Test Project</string>
+
+    <!-- Users Screen -->
+    <string name="txt_user_details">User Details</string>
+    <string name="txt_user">Users</string>
+    <string name="txt_user_data">User Data</string>
+
+    <!-- User -->
+    <string name="txt_create_user">Create User</string>
+    <string name="txt_delete">Delete</string>
+    <string name="txt_sort_by">Sort By : </string>
+    <string name="txt_name">Name</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_gender">Gender : </string>
+    <string name="txt_male">Male</string>
+    <string name="txt_female">Female</string>
+    <string name="txt_status">Status : </string>
+    <string name="txt_active">Active</string>
+    <string name="txt_inactive">InActive</string>
+    <string name="txt_submit">Submit</string>
+
+    <!-- Create User -->
+    <string name="msg_add_email">Please enter valid email !</string>
+    <string name="msg_add_name">Please enter valid name !</string>
+    <string name="msg_user_deleted">User deleted successfully !</string>
+    <string name="msg_user_created">User created successfully !</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text -->
+    <dimen name="default_text">14sp</dimen>
+    <dimen name="text14">14sp</dimen>
+    <dimen name="text16">16sp</dimen>
+
+    <dimen name="logoMainTextSize">48sp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin4">4dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin12">12dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin24">24dp</dimen>
+    <dimen name="margin26">26dp</dimen>
+    <dimen name="margin32">32dp</dimen>
+
+    <!-- Paddings -->
+
+    <dimen name="padding12">12dp</dimen>
+    <dimen name="padding16">16dp</dimen>
+    <dimen name="padding24">24dp</dimen>
+    <dimen name="padding32">32dp</dimen>
+
+    <!-- Dimens -->
+    <dimen name="dimen30">30dp</dimen>
+    <dimen name="dimen48">48dp</dimen>
+    <dimen name="dimen56">56dp</dimen>
+
+
+    <!-- CardView -->
+    <dimen name="cardCornerRadius8">8dp</dimen>
+    <dimen name="cardCornerRadius12">12dp</dimen>
+
+    <dimen name="cardElevation24">24dp</dimen>
+
+    <!-- Tabview -->
+    <dimen name="tabIndicatorHeight">5dp</dimen>
+
+</resources>
